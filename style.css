@@ -1,0 +1,225 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar Styling */
+
+.logo>img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 50px;
+    filter: invert(100%);
+    /* border: 2px solid black; */
+}
+
+#navBar {
+    position: fixed;
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-flow: row wrap; */
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+#navBar::before {
+    content: "";
+    background-color: rgb(14, 13, 13);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+ul {
+    /* border: 2px solid black; */
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+ul li {
+    text-decoration: none;
+    margin: 10px 30px;
+    padding: 20px 20px;
+}
+
+ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: rgb(190, 231, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 620px;
+}
+
+#home::before {
+    content: "";
+    background: url('https://cdn.pixabay.com/photo/2015/07/12/14/26/coffee-842020__480.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 96%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* Utility Classes */
+
+.primary {
+    padding: 10px;
+    font-size: 2.8rem;
+    color: rgb(17, 15, 15);
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.para {
+    color: rgb(17, 15, 15);
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn {
+    display: block;
+    padding: 5px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(153, 207, 255);
+}
+
+.secondary {
+    padding: 10px;
+    font-size: 2.3rem;
+    color: rgb(17, 15, 15);
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Services Section */
+
+#services {
+    display: flex;
+    /* flex-flow: row wrap; */
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px 20px;
+    margin: auto 3px;
+    border-radius: 23px;
+    background-color: rgba(204, 197, 197, 0.2);
+}
+
+.box-image {
+    display: block;
+    height: 180px;
+    margin: auto;
+}
+
+
+/* Clients Section */
+
+#clients {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#clients::before {
+    content: "";
+    background: url('https://media.istockphoto.com/photos/businessperson-attracting-pawn-figures-with-horseshoe-magnet-picture-id1189508360?b=1&k=6&m=1189508360&s=170667a&w=0&h=2S6CrFhRHv6_38O5sq4JmaqrVZkDU27PpxmF_zoRyv8=') no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 55vh;
+    z-index: -1;
+    opacity: 0.91;
+}
+
+.box-imagec {
+    display: block;
+    height: 180px;
+    margin: auto;
+}
+
+
+/* Contact Section Styling */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('https://media.istockphoto.com/photos/call-center-worker-accompanied-by-her-team-picture-id1278858684?b=1&k=6&m=1278858684&s=170667a&w=0&h=J4vNxol_ysfbXDxTLFjFO3M_Idklir3gD9HA0TPSLTA=') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.form-group {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input {
+    display: block;
+    width: 650px;
+    margin: 2px;
+    padding: 10px 10px;
+    text-align: center;
+    color: navy;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+}
